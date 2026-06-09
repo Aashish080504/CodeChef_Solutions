@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sobj = new Scanner(System.in);
+		
+		int x = sobj.nextInt();
+		double y = sobj.nextDouble();
+		
+		if((x % 5 == 0) && ((x + 0.50) <= y))
+		{
+		    y = (y - x - 0.50);
+		}
+		
+		System.out.printf("%.2f\n",y);
+		
+		
+	}
+}
