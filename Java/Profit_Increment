@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sobj = new Scanner(System.in);
+		
+		int t = sobj.nextInt();
+		
+		while(t > 0)
+		{
+		    int x = sobj.nextInt(), y = sobj.nextInt();
+		    
+		    if(x % 100 == 0)
+		    {
+		        int Pold = x - y;
+		        int NewSellingPrice = x + (x * 10) / 100;
+		        System.out.println(NewSellingPrice - Pold);
+		    }
+		    
+		    t--;
+		}
+	}
+}
