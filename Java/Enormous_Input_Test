@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+class CodeChef
+{
+    public static void main(String args[]) throws IOException
+    {
+        InputStreamReader iobj = new InputStreamReader(System.in);
+        BufferedReader bobj= new BufferedReader(iobj);
+        
+        StringTokenizer stobj = new StringTokenizer(bobj.readLine());
+        
+        
+        int n = Integer.parseInt(stobj.nextToken()), k = Integer.parseInt(stobj.nextToken()); 
+        int iCount = 0;
+        
+        for(int i = 1; i <= n; i++)
+        {
+            int a = Integer.parseInt(bobj.readLine());
+            
+            if(a % k == 0)
+            {
+                iCount++;
+            }
+        }
+        
+        System.out.println(iCount);
+    }
+}
