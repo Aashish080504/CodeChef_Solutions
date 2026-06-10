@@ -1,0 +1,33 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sobj = new Scanner(System.in);
+		
+		int t = sobj.nextInt();
+		
+		while(t > 0)
+		{
+		    int n = sobj.nextInt();
+		    
+		    int iDigit = 0, iSum = 0;
+		    while(n > 0)
+		    {
+	            iDigit = n % 10;
+		        
+		        iSum = iSum + iDigit;
+		        
+		        n = n / 10;
+		            
+	        }
+	        
+	            System.out.println(iSum);
+		    
+		    t--;
+		}
+	}
+}
