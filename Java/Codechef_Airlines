@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+		Scanner sobj = new Scanner(System.in);
+		
+		int t = sobj.nextInt();
+		
+		while(t > 0)
+		{
+		    int x = sobj.nextInt(), y = sobj.nextInt(), z = sobj.nextInt();
+		    
+		    if(x * 10 >= y)
+		    {
+		        System.out.println(y * z);
+		    }
+		    
+		    else 
+		    {
+		        System.out.println((x * 10) * z);
+		    }
+		    
+		    t--;
+		}
+	}
+}
