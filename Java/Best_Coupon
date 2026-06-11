@@ -1,0 +1,25 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sobj = new Scanner(System.in);
+		
+		int t = sobj.nextInt();
+		
+		while(t > 0)
+		{
+		    int x = sobj.nextInt();
+		    
+		    int Discount1 = x / 10;
+		    int Discount2 = 100;
+		    
+		    System.out.println(Math.max(Discount1, Discount2));
+		    
+		    t--;
+		}
+	}
+}
