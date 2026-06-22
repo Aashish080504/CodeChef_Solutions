@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sobj = new Scanner(System.in);
+		
+		int a = sobj.nextInt(), b = sobj.nextInt(), c = sobj.nextInt(), x = sobj.nextInt();
+		
+		if((x == a) || (x == b) || (x == c))
+		{
+		    System.out.println("Yes");
+		}
+		
+		else 
+		{
+		    System.out.println("No");
+		}
+	}
+}

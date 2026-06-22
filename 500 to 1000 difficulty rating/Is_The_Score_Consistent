@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+        Scanner sobj = new Scanner(System.in);
+        
+        int t = sobj.nextInt();
+        
+        while(t > 0)
+        {
+            int a = sobj.nextInt(), b = sobj.nextInt();
+            int c = sobj.nextInt(), d = sobj.nextInt();
+            
+            if((a <= c) && (b <= d))
+            {
+                System.out.println("POSSIBLE");
+            }
+            
+            else 
+            {
+                System.out.println("IMPOSSIBLE");
+            }
+            
+            t--;
+        }
+	}
+}
