@@ -1,0 +1,30 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sobj = new Scanner(System.in);
+		
+		int t = sobj.nextInt();
+		
+		while(t > 0)
+		{
+		    int b1 = sobj.nextInt(), b2 = sobj.nextInt(), b3 = sobj.nextInt();
+		    
+		    if(b1 + b2 + b3 < 2)
+		    {
+		        System.out.println("Water filling time");    
+		    }
+		    
+		    else 
+		    {
+		        System.out.println("Not now");
+		    }
+		  
+		    t--;
+		}
+	}
+}
