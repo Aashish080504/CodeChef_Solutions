@@ -1,0 +1,32 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sobj  = new Scanner(System.in);
+		
+		int t = sobj.nextInt();
+		
+		while(t > 0)
+		{
+		    int n = sobj.nextInt();
+		    int iCount = 0;
+		    
+		    for(int iCnt = 0; iCnt < n; iCnt++)
+		    {
+		        int dlevel = sobj.nextInt();
+		        if(dlevel >= 1000)
+		        {
+		            iCount++;
+		        }
+		    }
+		    
+		    System.out.println(iCount);
+		    
+		    t--;
+		}
+	}
+}
