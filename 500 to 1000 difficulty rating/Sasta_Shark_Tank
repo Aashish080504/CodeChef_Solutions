@@ -1,0 +1,38 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sobj = new Scanner(System.in);
+		
+		int t = sobj.nextInt();
+		
+		while(t > 0)
+		{
+		    int a = sobj.nextInt(), b = sobj.nextInt();
+		    
+		    int iNo1 = 10 * a;
+		    int iNo2 = 5 * b;
+		    
+		    if(iNo1 > iNo2)
+		    {
+		        System.out.println("FIRST");
+		    }
+		    
+		    else if(iNo1 < iNo2)
+		    {
+		        System.out.println("SECOND");
+		    }
+		    
+		    else 
+		    {
+		        System.out.println("ANY");
+		    }
+		    
+		    t--;
+		}
+	}
+}
